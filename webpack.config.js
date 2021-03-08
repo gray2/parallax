@@ -11,7 +11,7 @@ module.exports = {
 
   module:{
     rules:[
-      {
+      { //coooment
         test: /\.scss$/,
         use: [
           "style-loader", // 3. injects css into Document
