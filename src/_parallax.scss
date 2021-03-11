@@ -11,6 +11,17 @@ background-size: 100% auto;
 background-image: url('http://placehold.it/500x500/336699');
 
 }
+
+
+.parallax_bg1{
+  height: 2000px;
+  background: url("../dist/img/flatirons.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 @media screen and (max-width: 768px) {
 .parallax_img {
   background-attachment: inherit;
@@ -73,64 +84,86 @@ $primary: #1586D1;
 
 @include parallax-init;
 
-.parallax-container {
-  :nth-child(1) {
-    @include parallax(-.4);
-    top: 200px;
-    left: 200px;
-  }
-  :nth-child(2) {
-    @include parallax(.2); //level/number pushes the depth here
-    top: 200px;
-    left: 500px;
-  }
-  :nth-child(3) {
-    @include parallax(.3);
-    top: 400px;
-    left: 600px;
-  }
-  :nth-child(4) {
-    @include parallax(.1);
-    top: 500px;
-    left: 500px;
-  }
-  :nth-child(5) {
-    @include parallax(-2);
-    top: 2000px;
-    left: 2000px;
-  }
-  :nth-child(6) {
-    @include parallax(.4);
-    top: 600px;
-    left: 300px;
-  }
-  :nth-child(7) {
-    @include parallax(-1);
-    top: 400px;
-    left: 1000px;
-  }
-  :nth-child(8) {
-    @include parallax(-.4);
-    top: 100px;
-    left: 1400px;
-  }
-  :nth-child(9) {
-    @include parallax(.4);
-    top: 900px;
-    left: 500px;
-  }
-  :nth-child(10) {
-    @include parallax(-1);
-    top: 1600px;
-    left: 100px;
-  }
-  padding: 10%;
-  max-width: 40em;
+.parallax_dog{
+  @include parallax(-2);
+  background: url("../dist/img/dog.jpg");
+  top:300px;
+  right:50px;
+  max-width: 50px;
   margin: auto;
-  > * {
-    position: absolute;
-  }
+  position: absolute;
 }
+
+.parallax-container1{
+  @include parallax(.1);
+  top: 200px;
+  left: 200px;
+  max-width: 50%;
+  padding: 20px;
+  margin:auto;
+  position: absolute;
+  background-color: orange;
+  color: black;
+}
+
+// .parallax-container {
+//   :nth-child(1) {
+//     @include parallax(-.4);
+//     top: 200px;
+//     left: 200px;
+//   }
+//   :nth-child(2) {
+//     @include parallax(.2); //level/number pushes the depth here
+//     top: 200px;
+//     left: 500px;
+//   }
+//   :nth-child(3) {
+//     @include parallax(.3);
+//     top: 400px;
+//     left: 600px;
+//   }
+//   :nth-child(4) {
+//     @include parallax(.1);
+//     top: 500px;
+//     left: 500px;
+//   }
+//   :nth-child(5) {
+//     @include parallax(-2);
+//     top: 2000px;
+//     left: 2000px;
+//   }
+//   :nth-child(6) {
+//     @include parallax(.4);
+//     top: 600px;
+//     left: 300px;
+//   }
+//   :nth-child(7) {
+//     @include parallax(-1);
+//     top: 400px;
+//     left: 1000px;
+//   }
+//   :nth-child(8) {
+//     @include parallax(-.4);
+//     top: 100px;
+//     left: 1400px;
+//   }
+//   :nth-child(9) {
+//     @include parallax(.4);
+//     top: 900px;
+//     left: 500px;
+//   }
+//   :nth-child(10) {
+//     @include parallax(-1);
+//     top: 1600px;
+//     left: 100px;
+//   }
+//   padding: 10%;
+//   max-width: 40em;
+//   margin: auto;
+//   > * {
+//     position: absolute;
+//   }
+// }
 
 body {
   font-family: Roboto, sans-serif;

@@ -1,25 +1,27 @@
 const path = require("path");
 
 module.exports = {
-  mode:"development",
+  mode: "development",
   entry: "./src/index.js",
-  output:{
+  output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist")
   },
-
-
-  module:{
-    rules:[
-      { //coooment
+  module: {
+    rules: [
+      {
         test: /\.scss$/,
-        use: [
-          "style-loader", // 3. injects css into Document
-          "css-loader", // 2. turns css into commonjs
-          "sass-loader", // 1. turns sass into css
+        use: ["style-loader", // 3. injects css into DOM
+          "css-loader", // 2.turns css into commonjs
+          "sass-loader", // 1.turns sass into css
         ],
       },
-    ],
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {loader: 'url-loader'}
+        ]
+      }
+  ],
   },
-
 };
