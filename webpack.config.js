@@ -16,12 +16,18 @@ module.exports = {
           "sass-loader", // 1.turns sass into css
         ],
       },
+
       {
-        test: /\.(png|jpg)$/,
-        use: [
-          {loader: 'url-loader'}
-        ]
-      }
+        test: /\.(gif|png|jpg)$/,
+        use: "url-loader",
+
+      },
+
+      {
+     test: /\.svg$/,
+     loader: 'svg-inline-loader'
+      },
+
   ],
   },
 };

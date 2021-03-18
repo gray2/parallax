@@ -8,10 +8,19 @@ background-size: 100% auto;
 }
 
 .parallax_img2 {
-background-image: url('http://placehold.it/500x500/336699');
+background-image: url("../dist/img/dog.jpg");
 
 }
 
+.parallax_dog {
+height: 500px;
+background-image: url("../dist/img/dog.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% auto;
+
+}
 
 .parallax_bg1{
   height: 2000px;
@@ -85,9 +94,9 @@ $primary: #1586D1;
 @include parallax-init;
 
 .parallax_dog{
-  @include parallax(-2);
+  @include parallax(0.2);
   background: url("../dist/img/dog.jpg");
-  top:300px;
+  top:600px;
   right:50px;
   max-width: 50px;
   margin: auto;
