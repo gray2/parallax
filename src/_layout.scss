@@ -18,9 +18,11 @@
 
 .fullwidth{
 
-
+	display: flex;
+	align-content: center;
 	margin:2%;
 	width:96%;
+	// max-width:960px;
 	padding:2%;
 	box-sizing:border-box;
 
@@ -31,6 +33,7 @@
 }
 
 .halfwidth{
+	display:flex;
 	background-color:rgb(180,180,180);
 	margin:2%;
 	width:46%;
@@ -49,7 +52,7 @@
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header"
-    "main main . aside"
+    "main main . ."
     "aside aside aside aside"
     "footer footer footer footer";
 }
