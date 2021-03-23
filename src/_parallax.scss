@@ -89,7 +89,7 @@ $parallax-ios         : true !default;
 
 //css that works w the html
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
-$primary: #1586D1;
+// $primary: #1586D1;
 
 @include parallax-init;
 
@@ -181,16 +181,18 @@ body {
   line-height: 1;
 }
 
-h1, h2 {
-  font-weight: 100;
-  margin: 0;
-}
+// h1, h2 {
+//   font-weight: 100;
+//   margin: 0;
+//   text-align: center;
+// }
 
-h1 {
-  font-size: 5em;
-  color: $primary;
-}
-h2 {
-  font-size: 3em;
-  @include parallax(.2);
-}
+// h1 {
+//   font-size: 5em;
+//   color: $primary;
+//   text-align: center;
+// }
+// h2 {
+//   font-size: 3em;
+//   @include parallax(.2);
+// }

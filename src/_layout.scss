@@ -57,9 +57,19 @@
     "footer footer footer footer";
 }
 
+h1{
+	text-align:center;
+	margin: auto;
+	align-items: center;
+
+}
+
 header {
   grid-area: header;
+	margin: auto;
+	display: inline-block;
 }
+
 main {
   grid-area: main;
 }
