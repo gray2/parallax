@@ -50,35 +50,118 @@ $primary: #1586D1;
 
 // This is applying paralaxx elements to the elements within the paralaxx container.
 // Makes it 3d
+// .parallax-container {
+//   :nth-child(1) {
+//     @include parallax(-.6);
+//     top: 180px;
+//     left: 200px;
+//   }
+//
+//   :nth-child(2) {
+//     @include parallax(0.2);
+//     top: 1500px;
+//     left: 300px;
+//   }
+//
+//   :nth-child(3) {
+//     @include parallax(.05);
+//     top: 200px;
+//     left: 200px;
+//   }
+//
+//   :nth-child(4) {
+//     @include parallax(0.1);
+//     top: 200px;
+//     left: 200px;
+//   }
+//
+//   :nth-child(5) {
+//     @include parallax(-2);
+//     top: 200px;
+//     left: 200px;
+//   }
+//
+//   :nth-child(6) {
+//     @include parallax(0.4);
+//     top: 600px;
+//     left: 300px;
+//   }
+//
+//   :nth-child(7) {
+//     @include parallax(-1);
+//     top: 400px;
+//     left: 1000px;
+//   }
+//
+//   :nth-child(8) {
+//     @include parallax(-.4);
+//     top: 100px;
+//     left: 1400px;
+//   }
+//
+//   :nth-child(9) {
+//     @include parallax(0.4);
+//     top: 900px;
+//     left: 500px;
+//   }
+//
+//   :nth-child(10) {
+//     @include parallax(-1);
+//     top: 1600px;
+//     left: 100px;
+//   }
+//   padding: 10%;
+//   max-width: 40em;
+//   margin: auto;
+//
+//   > * {
+//     position: absolute;
+//   }
+// }
+
 .parallax-container {
   :nth-child(1) {
-    @include parallax(-.6);
-    top: 180px;
-    left: 200px;
+    // @include parallax(0.1);
+    @include parallax(0.1);
+    // top: 50px;
+    // left: 50px;
+    top: 25%;
+    left: 1%;
+    // position: absolute;
   }
 
   :nth-child(2) {
     @include parallax(0.2);
-    top: 1500px;
-    left: 300px;
+    // top: 275px;
+    // left: 75px;
+
+    top: 85%;
+    left: 4%;
+    // left: -50px;
   }
 
   :nth-child(3) {
-    @include parallax(.05);
-    top: 200px;
-    left: 200px;
+    @include parallax(0.2);
+    // top: 500px;
+    // left: 100px;
+
+    top: 145%;
+    left: 12%;
   }
 
   :nth-child(4) {
-    @include parallax(0.1);
-    top: 200px;
-    left: 200px;
+    @include parallax(0.2);
+    // top: 600px;
+    // left: 100px;
+
+    top: 175%;
+    left: 18%;
   }
 
   :nth-child(5) {
     @include parallax(-2);
-    top: 200px;
-    left: 200px;
+    top: 2000px;
+    left: 2000px;
   }
 
   :nth-child(6) {
@@ -111,7 +194,7 @@ $primary: #1586D1;
     left: 100px;
   }
   padding: 10%;
-  max-width: 40em;
+  max-width: 60em;
   margin: auto;
 
   > * {
@@ -124,7 +207,7 @@ body {
   font-weight: 100;
   background: #EEF1F3;
   line-height: 2.5;
-  max-width: 960px;
+  max-width: 100%;
   margin: auto;
 }
 

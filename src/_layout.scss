@@ -61,16 +61,18 @@
 // }
 .container {
   display: grid;
+  max-width:960px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas:
     "header header header header header"
-    "main main main aside"
+    // "main aside aside aside aside"
+    "main main . . aside"
     // "aside aside aside aside aside"
     "footer footer footer footer footer";
 		margin:auto;
-		padding-left: 25%;
-		padding-right:25%;
+		// padding-left: 25%;
+		// padding-right:25%;
 }
 
 h1{
@@ -82,15 +84,17 @@ h1{
 
 header {
   grid-area: header;
-	// margin: auto;
+	margin: auto;
 	// display: inline-block;
 }
 
-main {
+main{
   grid-area: main;
+  margin: auto;
 }
 aside {
   grid-area: aside;
+  margin:auto;
 }
 footer {
   grid-area: footer;
