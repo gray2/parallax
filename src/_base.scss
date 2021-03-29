@@ -3,3 +3,45 @@ body {
 background: $bg;
 font-family: $font;
 }
+
+#container{
+  width: 100%;
+  display:inline-block;
+}
+
+ul{
+  text-align: left;
+  padding: 15%;
+
+  li{
+    display:inline;
+
+  }
+}
+
+ol{
+
+  text-align: left;
+  padding: 15%;
+
+  li{
+    display:inline;
+
+  }
+
+}
+
+h1{
+  font-size: $h1size;
+  margin: auto;
+  text-align: left;
+
+}
+
+h2{
+
+}
+
+p{
+
+}
