@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
 body {
 background: $bg;
 font-family: $font;
@@ -14,10 +16,12 @@ header{
 
 ul{
   text-align: left;
-  padding: 15%;
+  padding-left: 20%;
+
 
   li{
-    display:inline;
+    font-size: 16pt;
+    font-family: 'Questrial', Arial, sans-serif;
 
   }
 }
@@ -25,10 +29,12 @@ ul{
 ol{
 
   text-align: left;
-  padding: 15%;
+  margin: auto;
 
   li{
-    display:inline;
+    // display:inline;
+    font-size: 16pt;
+    font-family: 'Questrial', Arial, sans-serif;
 
   }
 
@@ -43,9 +49,23 @@ h1{
 }
 
 h2{
+  font-family: $font;
 
 }
 
 p{
+  font-size: 16pt;
+  font-family: 'Questrial', Arial, sans-serif;
+
+
+}
+
+h3{
+  font-family: $font;
+  size:3em;
+  text-align:center;
+  background-color: $custom-orange;
+  color:white;
+  padding: 10px;
 
 }

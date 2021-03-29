@@ -140,12 +140,17 @@ h2 {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 6em;
   color: $primary;
   text-align: center;
 }
 
 h2 {
+  font-size: 4em;
+  @include parallax(0.1);
+}
+
+h3 {
   font-size: 3em;
   @include parallax(0.1);
 }
@@ -179,9 +184,18 @@ position: relative;
 }
 
 
-.parallax_bg1{
-  height: 2000px;
-  background: url("../dist/img/flatirons.jpg");
+.parallax_img3{
+  height: 500px;
+  background: url("../dist/img/badcakes.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax_img4{
+  height: 500px;
+  background: url("../dist/img/ingredients.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,6 +206,20 @@ position: relative;
   margin-top:8%;
   text-align: left;
   padding-left:30%;
+}
+
+.part1 p{
+  border: 3px solid $custom-orange;
+  padding-left: 10px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: $custom-orange;
+  color:white;
+}
+
+.part1 h2{
+  text-align:left;
+
 }
 
 .part2{
@@ -207,4 +235,36 @@ position: relative;
 .part4{
   margin-top:8%;
   padding-left:4%;
+}
+
+.part5{
+  margin-top:8%;
+  padding-right:75%;
+}
+
+.part5 p{
+  border: 3px solid $custom-orange;
+
+  padding:20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: $custom-orange;
+  color:white;
+}
+
+.part6{
+  // margin-top:8%;
+
+}
+
+.part6 p{
+  margin:auto;
+  padding-left: 20px;
+  padding-top:20px;
+  padding-bottom: 20px;
+
+
+}
+.part7{
+
 }
