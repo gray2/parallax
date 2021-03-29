@@ -1,12 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 body {
 background: $bg;
 font-family: $font;
 }
 
+header{
+  width:100%;
+}
 #container{
   width: 100%;
-  display:inline-block;
+  // display:inline-block;
 }
 
 ul{
@@ -35,6 +38,7 @@ h1{
   font-size: $h1size;
   margin: auto;
   text-align: left;
+  font-family: 'Gochi Hand', Helvetica, sans-serif;
 
 }
 

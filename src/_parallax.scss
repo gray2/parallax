@@ -37,12 +37,13 @@ $parallax-ios: true !default;
 @mixin parallax(
   $distance : 0,
   $perspective : $parallax-perspective) {
-  transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+  transform: translateZ($distance * $perspective * 1px)
+  scale(abs($distance - 1));
   z-index: $distance * 1000;
 }
 // End of magic parallax mixins
 @import url(https://fonts.googleapis.com/css?family=Roboto:100);
-$primary: #1586D1;
+$primary: rgb(230, 154, 48);
 @include parallax-init;
 
 
@@ -113,6 +114,7 @@ $primary: #1586D1;
   padding: 10%;
   max-width: 40em;
   margin: auto;
+  width:100%;
 
   > * {
     position: absolute;
@@ -126,17 +128,21 @@ body {
   line-height: 2.5;
   min-width: 960px;
   margin: auto;
+
 }
+
+
 
 h1,
 h2 {
   font-weight: 100;
-  margin: 0;
+  margin: 15px;
 }
 
 h1 {
   font-size: 5em;
   color: $primary;
+  text-align: center;
 }
 
 h2 {
@@ -151,22 +157,24 @@ h2 {
 @include parallax-init;
 
 
-.parallax_cake {
+.parallax_img1 {
 height: 500px;
 background-image: url('../dist/img/big-stack.jpg');
 background-attachment: fixed;
 background-position: center;
-background-repeat: no-repeat;
-background-size: 100% auto;
+background-repeat: repeat-x;
+background-size: 50% auto;
+position:relative;
 }
 
-.parallax_sadcake {
+.parallax_img2 {
 height: 500px;
 background-image: url("../dist/img/sadcake.jpg");
 background-attachment: fixed;
 background-position: center;
-background-repeat: no-repeat;
-background-size: 50% auto;
+background-repeat: repeat-x;
+background-size: 100% auto;
+position: relative;
 
 }
 
@@ -182,7 +190,7 @@ background-size: 50% auto;
 
 .part1{
   margin-top:8%;
-
+  text-align: left;
   padding-left:30%;
 }
 
@@ -192,6 +200,11 @@ background-size: 50% auto;
 }
 
 .part3{
+  margin-top:8%;
+  padding-left:4%;
+}
+
+.part4{
   margin-top:8%;
   padding-left:4%;
 }

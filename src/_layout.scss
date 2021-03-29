@@ -1,16 +1,23 @@
 .container {
-  display: grid;
-  width:100%;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header" "main main . aside" "footer footer footer footer";
+  // display: grid;
+  // width:100%;
+  // min-width: 1080px;
+  // grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  // grid-template-rows: auto;
+  // grid-template-areas: "header header header header header" "main main . . aside" "footer footer footer footer footer";
 }
 
 
 
 header {
   grid-area: header;
+  background-color: rgb(230, 154, 48);
 
+
+}
+
+header h1{
+  color: white;
 }
 
 main{
