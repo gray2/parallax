@@ -1,3 +1,50 @@
+.container {
+  // display: grid;
+  // width:100%;
+  // min-width: 1080px;
+  // grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+  // grid-template-rows: auto;
+  // grid-template-areas: "header header header header header" "main main . . aside" "footer footer footer footer footer";
+}
+
+@media all and (min-width:450px) and (max-width:750px){
+
+	.container{
+		width: 46%;
+    margin-left: 4%;
+
+    h1{
+      font-size:36pt;
+    }
+
+    h2{
+      font-size:32pt;
+    }
+
+    h3{
+      font-size:30pt;
+    }
+
+    p{
+      font-size:18pt;
+      padding-right:12px;
+
+    }
+
+    .part1 p, .part5 p{
+      border: 5px solid $custom-orange;
+      margin: auto;
+    }
+
+
+
+	}
+
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .parallax_img {
     background-attachment: inherit;
