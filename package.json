@@ -27,7 +27,7 @@
   "homepage": "https://github.com/gray2/html5-guys#readme",
   "devDependencies": {
     "css-loader": "^5.1.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^8.0.0",
     "sass-loader": "^11.0.1",
     "style-loader": "^2.0.0",
     "svg-inline-loader": "^0.8.2",
